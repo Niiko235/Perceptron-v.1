@@ -38,6 +38,22 @@ Desde la explicación matematica, El perceptrón calcula una combinación lineal
 • $b$: sesgo (bias)
 • $f$: función de activación
 
+
+## ¿Como el hará para saber que punto pertenece a que grupo?
+
+Esto es posible gracias a la **Intercepcion Geometrica**, El perceptrón define una frontera de decisión dada por:
+$w_1 x_1 + w_2 x_2 + b = 0$ y eso lo evalua una funcion
+
+    •	En 2D: una recta
+    •	En 3D: un plano
+    •	En dimensiones superiores: un hiperplano
+
+El vector de pesos define la orientación de la frontera.
+
+Los puntos que caen a un lado de esta frontera se clasifican como una clase, y los del otro lado como la clase opuesta. Es decir que, una nube de puntos debe de tener como resultado de la expresión matematica _0_ y la otra debe de tener cualquier otro resultado, en este caso diremos que es _1_ ----> _Por ello la clasificación binaria_
+
+![Descripción grafica y matematica de un perceptrón](./imgs/image.png)
+
 ## Funcion de activacion
 
 La función de activación es una función matemática que toma la suma ponderada de las entradas y aplica una transformación para producir la salida del perceptrón. El umbral puede considerarse como un valor específico de la función de activación que determina cuándo el perceptrón debe "activarse" o producir una salida
@@ -56,24 +72,9 @@ $$
 
 Lo que esto nos quiere decir es que: la función evaluará el resultado de la sumatoria que nos da el perceptron, si ese resultado es igual o mayor que cero, el resultado es 1; pero si es menor que 0 el resultado es cero. Este resultado es _La salida obtenida_ 
 
-## ¿Como el hará para saber que punto pertenece a que grupo?
-
-Esto es posible gracias a la **Intercepcion Geometrica**, El perceptrón define una frontera de decisión dada por:
-$w_1 x_1 + w_2 x_2 + b = 0$
-
-    •	En 2D: una recta
-    •	En 3D: un plano
-    •	En dimensiones superiores: un hiperplano
-
-El vector de pesos define la orientación de la frontera.
-
-Los puntos que caen a un lado de esta frontera se clasifican como una clase, y los del otro lado como la clase opuesta. Es decir que, una nube de puntos debe de tener como resultado de la expresión matematica _0_ y la otra debe de tener cualquier otro resultado, en este caso diremos que es _1_ ----> _Por ello la clasificación binaria_
-
-![Descripción grafica y matematica de un perceptrón](./imgs/image.png)
-
 ## Porcentraje de error
 
-El perceptron debe de ser lo mas preciso posible asi que por ello siempre debemos de tener una tolerancia al erro lo más baja posible $Error = 0.1$. El porcentaje de error es la diferencia entre: **El valor que esperabamos - el valor que obtuvimos**. Si el error es mayor al que toleramos, toca entrenar a el perceptron en ese caso en especifico.
+El perceptron debe de ser lo mas preciso posible asi que por ello siempre debemos de tener una tolerancia al error lo más baja posible $Error = 0.1$. El porcentaje de error es la diferencia entre: **El valor que esperabamos - el valor que obtuvimos**. Si el error es mayor al que toleramos, toca entrenar a el perceptron en ese caso en especifico.
 
 ## Aprendizaje del perceptrón
 
