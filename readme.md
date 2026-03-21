@@ -48,7 +48,7 @@ Hay muchas funciones que se pueden aplicar a un perceptron. Pero como estamos en
 que en terminos sencillos podemos expresarla de la siguiente manera:
 
 $$
-y = F(z) \begin{cases}
+y = F(h) \begin{cases}
 1 & \text{si } z \geq 0 \\
 0 & \text{si } z < 0
 \end{cases}
