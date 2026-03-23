@@ -52,12 +52,13 @@ def perceptron_3d_2Nubes(numero_puntos=100):
 
     pesos, bias = perceptron_3d_2Nubes(entradas, resultado_esperado, numero_puntos*2, pesos, bias, numero_epocas=1000, tasa_aprendizaje=0.0001)
 
-    #x_line = np.linspace(-8, 8, 100)
-    ##x_line, y_line = np.meshgrid(x_line, y_line)
+    # x_line = np.linspace(-8, 8, 100)
+    # y_line = np.linspace(-8, 8, 100)
+    # x_line, y_line = np.meshgrid(x_line, y_line)
 
-    #z_line = -(pesos[0] * x_line + pesos[1] * y_line + bias) / pesos[2]
+    # z_line = -(pesos[0] * x_line + pesos[1] * y_line + bias) / pesos[2]
 
-    #doble_nube_3d(x_nube1, y_nube1, z_nube1, x_nube2, y_nube2, z_nube2, x_line, y_line, z_line)
+    # doble_nube_3d(x_nube1, y_nube1, z_nube1, x_nube2, y_nube2, z_nube2, x_line, y_line, z_line)
 
 
 
