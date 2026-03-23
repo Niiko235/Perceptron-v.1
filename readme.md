@@ -2,6 +2,10 @@
 
 ```
 python3 archivo -> correr
+
+cmd + Shift + v -> pre-visualizador del readme 
+cmd + k + sueltas + presionas: v -> lado a lado visualizar el readme 
+
 ```
 
 # Problema a desarrollar: Clasificacion de puntos en 2D y 3D
@@ -42,7 +46,7 @@ Desde la explicación matematica, El perceptrón calcula una combinación lineal
 ## ¿Como el hará para saber que punto pertenece a que grupo?
 
 Esto es posible gracias a la **Intercepcion Geometrica**, El perceptrón define una frontera de decisión dada por:
-$w_1 x_1 + w_2 x_2 + b = 0$ y eso lo evalua una funcion
+$w_1  x_1 + w_2 x_2 + b = 0$ y eso lo evalua una funcion
 
     •	En 2D: una recta
     •	En 3D: un plano
@@ -60,7 +64,7 @@ La función de activación es una función matemática que toma la suma ponderad
 
 Hay muchas funciones que se pueden aplicar a un perceptron. Pero como estamos en un problema lineal usaremos la tradicional: **_Función escalón_**
 ![Funcion escalón: recuperada de: https://upload.wikimedia.org/wikipedia/commons/4/4a/Funci%C3%B3n_Cu_H.svg](./imgs/image-1.png)
-
+---
 que en terminos sencillos podemos expresarla de la siguiente manera:
 
 $$
@@ -82,10 +86,10 @@ $$dw = \beta \cdot (y_{valor deseado} - Y_{valor obtenido}) \cdot x$$
 
 donde:
 
-    •	$\beta $: Es la tasa de aprendizaje  -> el ritmo con el que el perceptron aprende, entre más grande el aprendizaje es mas rapdio pero menos preciso en casos muy exigidos.
-    •	$y_{valor deseado}$: El resultado que se esperaba o verdadero
-    •	$Y_{valor obtenido}$: El resultado que nos esta dando el perceptron de momento
-    •   $x$: valor actual de la entrada
+1. $\beta $: Es la tasa de aprendizaje  -> el ritmo con el que el perceptron aprende, entre más grande el aprendizaje es mas rapdio pero menos preciso en casos muy exigidos.
+2. $y_{valor deseado}$: El resultado que se esperaba o verdadero
+3. $Y_{valor obtenido}$: El resultado que nos esta dando el perceptron de momento
+4. $x$: valor actual de la entrada
 
 **Entranamiento del Bias:** el sesgo es un peso más, pero su entrada siempre es 1, por lo que su aprendizaje seria
 $$db = \beta  \cdot (y_{valor deseado} - Y_{valor obtenido}) $$
