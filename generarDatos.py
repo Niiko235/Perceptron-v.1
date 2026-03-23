@@ -17,7 +17,7 @@ def generar_datos_2d_2Nubes():
 
 
 def generar_datos_3d_2Nubes(numero_puntos=100):
-    """Vamos a generar una nube de puntos en 2D, con una media diferente y una desviación estándar de 1."""
+    """Vamos a generar dos nubes de puntos en 3D, cada una con 100 particulas, con una media diferente y una desviación estándar de 1."""
 
     x_nube1, y_nube1, z_nube1 = np.random.multivariate_normal(mean=[-3, -3, -3], cov=[[1, -0.3, 1], [-0.3, 1, 1], [1, 1, -0.3]], size=numero_puntos).T
 
