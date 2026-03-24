@@ -13,7 +13,6 @@ cmd + k + sueltas + presionas: v -> lado a lado visualizar el readme
 Este repositorio tiene como objetivo explicar y demostrar de forma pedagogica como funciona el perceptron y que se debe tener en mente a la hora de emplear uno. Este proyecto tiene como objetivo clasificar datos en dos clases, especificamente, se trabaja con nubes de puntos en dos dimensiones, que posteriormente se extediente a tres dimensiones; se busca explicar por qué el perceptron es la herramienta indicada para este problema, siempre y cuando las grupos de puntos sean linealmente separables.
 
 ## Objetivos
-
     •	Implementar un perceptrón binario sin librerías de machine learning.
     •	Clasificar dos nubes de puntos en 2D mediante una recta.
     •	Extender el modelo a 3 entradas (3D), donde la frontera de decisión es un plano.
