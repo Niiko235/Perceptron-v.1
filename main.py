@@ -3,7 +3,7 @@ import numpy as np
 
 def perceptron_2d_2Nubes(numero_puntos=100):
     
-    # importamos las funciones que necesitamos para generar los datos y graficarlos
+      # importamos las funciones que necesitamos para generar los datos y graficarlos
     from generarDatos import generar_datos_2d_2Nubes
     from graficas import doble_nube_2d
     from perceptron import perceptron2D
@@ -126,4 +126,4 @@ def perceptron_3d_3Nubes(numero_puntos=100):
 
 
 
-perceptron_3d_3Nubes(100)
+perceptron_2d_2Nubes(100)
