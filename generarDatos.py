@@ -95,9 +95,7 @@ def generar_datos_3d_3Nubes(numero_puntos=100):
     y3 = np.random.normal(9, 1, numero_puntos)
     z3 = np.random.normal(9, 1, numero_puntos)
 
-    return x1,y1,z1,x2,y2,z2,x3,y3,z3, \
-           np.array([1]*numero_puntos + [0]*(2*numero_puntos)), \
-           np.array([0]*numero_puntos + [1]*numero_puntos + [0]*numero_puntos)
+    return x1,y1,z1,x2,y2,z2,x3,y3,z3, np.array([1]*numero_puntos + [0]*(2*numero_puntos)), np.array([0]*numero_puntos + [1]*numero_puntos + [0]*numero_puntos)
 
 
 
