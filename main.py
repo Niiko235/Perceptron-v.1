@@ -93,12 +93,12 @@ def perceptron_3d_3Nubes(numero_puntos=100):
 
 
 
-    pesos1, bias1, listErrores1, listPesos1, listBias1  = perceptron_3d_3Nubes(entradas, resultado_esperado1, numero_puntos*3, pesos1, bias1, numero_epocas=80, tasa_aprendizaje=0.01)
+    pesos1, bias1, listErrores1, listPesos1, listBias1  = perceptron_3d_3Nubes(entradas, resultado_esperado1, numero_puntos*3, pesos1, bias1, numero_epocas=250, tasa_aprendizaje=0.01)
 
 
 
 
-    pesos2, bias2, listErrores2, listPesos2, listBias2 = perceptron_3d_3Nubes(entradas[100:], resultado_esperado2[100:], numero_puntos*2, pesos2, bias2, numero_epocas=80, tasa_aprendizaje=0.01)
+    pesos2, bias2, listErrores2, listPesos2, listBias2 = perceptron_3d_3Nubes(entradas[100:], resultado_esperado2[100:], numero_puntos*2, pesos2, bias2, numero_epocas=250, tasa_aprendizaje=0.01)
 
 
     export_3nubes_3d(entradas, resultado_esperado1, resultado_esperado2)
@@ -107,23 +107,4 @@ def perceptron_3d_3Nubes(numero_puntos=100):
 
 
 
-    
-
-    # u = np.linspace(-2, 12, 100)
-    # v = np.linspace(-2, 12, 100)
-    # u, v = np.meshgrid(u, v)
-
-    # x_line, y_line = u, v
-    # z_line = -(pesos[0] * x_line + pesos[1] * y_line + bias) / pesos[2]
-
-   
-
-    # doble_nube_3d(x_nube1, y_nube1, z_nube1, x_nube2, y_nube2, z_nube2, x_line, y_line, z_line)
-
-
-
-
-
-
-
-perceptron_2d_2Nubes(100)
+perceptron_3d_3Nubes(100)
