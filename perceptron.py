@@ -27,8 +27,8 @@ def perceptron2D(entradas, resultado_esperado, numero_puntos, pesos, bias, numer
             # Aprendizaje por iteración: actualizamos los pesos y el bias
             if error != 0:
                 # Utilizamos la multiplicación escalar para actializar el vector de pesos directamente y no tener que actualizar cada peso por separado
-                pesos = pesos + tasa_aprendizaje * error * entradas[i]
-                bias = bias + tasa_aprendizaje * error
+                pesos += tasa_aprendizaje * error * entradas[i] # <- multipoicacion a escalar
+                bias += tasa_aprendizaje * error
 
 
 def perceptron_3d_2Nubes(entradas, resultado_esperado, numero_puntos, pesos, bias, numero_epocas=100, tasa_aprendizaje=0.01):
