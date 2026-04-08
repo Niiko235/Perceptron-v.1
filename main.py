@@ -25,7 +25,7 @@ def perceptron_2d_2Nubes(numero_puntos=100):
     # graficamos las nubes de puntos y su recta para ver si el entramiento fue efectivo
 
     # generamos 100 puntos entre -6 y 6 para graficar la recta de decision
-    x_line = np.linspace(-6, 6, 100) 
+    x_line = np.linspace(-20, 20, 100) 
     # Sabemos que el perceptron satisface 
     y_line = -(pesos[0]*x_line + bias)/pesos[1] 
 
@@ -107,4 +107,4 @@ def perceptron_3d_3Nubes(numero_puntos=100):
 
 
 
-perceptron_3d_3Nubes(100)
+perceptron_3d_2Nubes(100)
